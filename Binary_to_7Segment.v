@@ -8,7 +8,7 @@ always @ (*)
  begin
   case (binary)
     4'b0000 : begin
-               segment = 7'b1111110;
+               segment = 7'b1111110 ;
               end
  
     4'b0001 : begin
@@ -28,7 +28,7 @@ always @ (*)
              end
 
     4'b0101: begin
-              segment = 7'b1011011 ; 
+              segment = 7'b1011011; 
             end
 
     4'b0110: begin
