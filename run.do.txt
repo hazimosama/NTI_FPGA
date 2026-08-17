@@ -1,0 +1,5 @@
+vlib work
+vlog *.v
+vsim -voptargs=+acc work.Gray_to_7Segment_TOP_TB
+do wave.do
+run -all
