@@ -1,0 +1,5 @@
+vlib work
+vlog *.v
+vsim -voptargs=+acc work.UP_Down_Counter_TOP_TB
+do wave.do
+run -all
