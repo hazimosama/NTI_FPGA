@@ -1,7 +1,4 @@
-module UP_Down_Counter_TOP
-#(
-    parameter division_ratio = 4
-)
+module UP_Down_Counter_TOP#(parameter division_ratio = 4)
 (
     input             CLK_IN,
     input             reset_n,

@@ -1,6 +1,4 @@
-`timescale 1ns/1ps
-
-module UP_Down_Counter_TOP_TB();
+module Up_Down_Counter_TOP_TB();
 
 reg CLK_IN_TB;
 reg reset_n_TB;
@@ -30,21 +28,28 @@ begin
     #10;
     reset_n_TB = 1;
 
-    // Count UP
-    #20;
+    // COUNT UP
+    #5;
     enable_TB = 1;
     up_TB = 1;
 
+    #160;
+
     // HOLD
-    #80;
     enable_TB = 0;
 
-    // Count DOWN
     #40;
+
+    // COUNT DOWN
     enable_TB = 1;
     up_TB = 0;
 
-    #80;
+    #160;
+
+    // HOLD
+    enable_TB = 0;
+
+    #20;
 
     $stop;
 end
